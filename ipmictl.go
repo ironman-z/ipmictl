@@ -29,6 +29,8 @@ func init() {
 
 func usage() {
     fmt.Fprintf(os.Stderr, `
+Remote control startup or shutdown based on ipmitool
+
 Usage:
     ipmictl -H 127.0.0.1 -U username -P password -p [ status | on | off ]
     ipmictl -i hosts.txt -p [ status | on | off ]
